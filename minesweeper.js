@@ -37,8 +37,8 @@ function startGame () {
   // Don't remove this function call: it makes the game work!
   for (i = 0; i < board.cells.length; i++){
 
-    var cell = board.cells[i]
-    cell.surroundingMines = countSurroundingMines(cells);
+    var cells = board.cells[i]
+    cells.surroundingMines = countSurroundingMines(cells);
   }
 
  lib.initBoard() 
